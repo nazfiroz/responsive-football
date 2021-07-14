@@ -96,47 +96,63 @@ main {
   font-size: 16px;
   text-align: justify;
 }
+/* -------- footer ------- */
+footer {
+  background-color: white;
+  width: 484px;
+  height: 213px;
+  margin-left: 500px;
+}
+.footer-logo img {
+  width: 480px;
+  height: 110px;
+}
+.socila-icon {
+  background-color: grey;
+  border-radius: 50px;
+}
 
 /*----------Media Queries------------ */
 /* --------Mobile Devices------ */
 @media only screen and (max-width: 688px) {
   .header-top {
     width: 100%;
-    height: 695px;
+    height: 595px;
     background-color: #2d25a0;
-    display: flex;
   }
   .header-title {
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     margin-top: 80px;
-    margin-left: 100px;
-    line-height: 60px;
+    margin-left: 40px;
+    line-height: 40px;
   }
   .watch-live {
     width: 168px;
     height: 44px;
     background-color: #e02c6d;
-    margin-top: 310px;
-    margin-left: 100px;
+    margin-top: 240px;
+    margin-left: 40px;
     transition: width 1s;
   }
+  .watch-live:hover {
+    width: 200px;
+  }
   .banner {
-    margin-top: 370px;
-    margin-left: 100px;
+    margin-top: 300px;
+    margin-left: 10px;
   }
   .banner img {
-    width: 400px;
-    height: 300px;
+    width: 200px;
+    height: 180px;
   }
   .container {
     width: 100%;
   }
   .blogs,
-  .blog,
-  .blog-info {
+  .blog {
+    display: flex;
     grid-template-columns: repeat(1, 1fr);
-    align-items: center;
     flex-direction: column;
   }
 }
