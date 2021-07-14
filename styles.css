@@ -101,19 +101,19 @@ main {
 .optional {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .photo-frame {
   width: 1020px;
   position: relative;
   overflow: hidden;
-  align-content: center;
-  margin: 10px;
-  margin-left: 50px;
+  padding: 15px;
   background-color: white;
 }
 .photo img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 .news-details {
   display: none;
@@ -224,15 +224,25 @@ main {
     height: 236px;
     display: flex;
   }
-
+  .optional {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
   .photo-frame {
     width: 310px;
     margin: 10px;
     margin-left: px;
     background-color: white;
   }
+  .photo-frame:hover .news-details {
+    display: block;
+    background-color: rgba(255, 228, 196, 0.288);
+  }
   .photo img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
   .footer-logo img {
     width: 271px;
