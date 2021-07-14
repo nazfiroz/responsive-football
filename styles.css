@@ -224,12 +224,14 @@ main {
 
   .photo-frame {
     width: 310px;
-
     margin: 10px;
-    margin-left: 85px;
+    margin-left: 25px;
     background-color: white;
   }
   .photo img {
     width: 100%;
   }
+  .footer-logo img {
+    width: 271px;
+    height: 63px;
 }
